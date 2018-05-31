@@ -25,8 +25,6 @@ class Player:
         self.mask = pygame.mask.from_surface(self.surface)
     def draw(self):
         self.screen.blit(self.surface, self.newPos)
-    def get_rect(self):
-        return pygame.Rect((self.newPos[0],self.newPos[1],self.surface.get_width(),self.surface.get_height()))
 
 screenRes = (640,480)
 screen = pygame.display.set_mode(screenRes)
