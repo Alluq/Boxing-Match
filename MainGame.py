@@ -134,7 +134,7 @@ class Player:
         self.pos[0] += self.xSpeed
         self.pos[1] += self.ySpeed
         
-        #resets the 
+        #resets the new pos and mask
         self.newPos = (self.pos[0] - self.surface.get_width() / 2, self.pos[1] - self.surface.get_height() / 2)
         self.mask = pygame.mask.from_surface(self.surface)
        
